@@ -1,7 +1,7 @@
 CC=gcc
 FLAGS= -Wall
 
-all: stringProg
+all: stringProg libfuncs.so
 
 stringProg: main.o libfuncs.so
 	$(CC) $(FLAGS) main.o ./libfuncs.so -o stringProg
